@@ -1,0 +1,29 @@
+{
+  "name": "vtor-cli",
+  "version": "1.0.0",
+  "description": "CLI para instalar componentes Shopify de um repositório centralizado",
+  "type": "module",
+  "bin": {
+    "vtor": "./bin/vtor.js"
+  },
+  "scripts": {
+    "start": "node bin/vtor.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "shopify",
+    "cli",
+    "components",
+    "themes"
+  ],
+  "author": "VTOR",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^8.3.0",
+    "commander": "^14.0.3",
+    "dotenv": "^17.3.1",
+    "fs-extra": "^11.3.3",
+    "picocolors": "^1.1.1",
+    "tiged": "^2.12.7"
+  }
+}
