@@ -1,7 +1,14 @@
 {
-  "name": "vtor-cli",
+  "name": "@vs-7/vtor-cli",
   "version": "1.0.0",
   "description": "CLI para instalar componentes Shopify de um repositório centralizado",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VS-7/vtor-cli.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "type": "module",
   "bin": {
     "vtor": "bin/vtor.js"
