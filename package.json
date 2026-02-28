@@ -4,8 +4,12 @@
   "description": "CLI para instalar componentes Shopify de um repositório centralizado",
   "type": "module",
   "bin": {
-    "vtor": "./bin/vtor.js"
+    "vtor": "bin/vtor.js"
   },
+  "files": [
+    "bin",
+    "src"
+  ],
   "scripts": {
     "start": "node bin/vtor.js",
     "test": "echo \"No tests yet\" && exit 0"
