@@ -1,3 +1,36 @@
+```mermaid
+useCaseDiagram
+    actor "Usuário Visitante" as UV
+    actor "Inquilino" as IN
+    actor "Proprietário" as PR
+    actor "Corretor" as CO
+    actor "Admin" as AD
+
+    package "App Imobiliária" {
+        usecase "Buscar Imóveis" as UC1
+        usecase "Agendar Visita" as UC5
+        usecase "Enviar Proposta" as UC6
+        usecase "Anunciar Imóvel" as UC9
+        usecase "Gerenciar Propostas" as UC11
+        usecase "Assinar Contrato" as UC8
+        usecase "Validar Anúncio" as UC16
+    }
+
+    UV --> UC1
+    IN --> UC1
+    IN --> UC5
+    IN --> UC6
+    IN --> UC8
+    
+    PR --> UC9
+    PR --> UC11
+    
+    CO --> UC5
+    
+    AD --> UC16
+    AD --> UC8
+```
+
 # 🚀 VTOR CLI — Shopify Component Tool
 
 CLI para instalar componentes Shopify de um repositório centralizado no GitHub.
